@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fe5552cb3ed5284984fd182d5ffd9e8, type: 3}
+  m_Name: BossAI
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyCharacterData
+  detectionRange: 28
+  loseRange: 255
+  fieldOfView: 140
+  confirmationTime: 0.25
+  perceptionInterval: 0.1
+  soundOcclusionFactor: 0.5
+  investigationDuration: 6
+  sightMemoryDuration: 8
+  searchDuration: 8
+  pursuitLimit: 16
+  thinkInterval: 0.12
+  reactionDelay: {x: 0.3, y: 0.3}
+  preferredMinRange: 8
+  preferredMaxRange: 84
+  rangeHysteresis: 2
+  aimTolerance: 4
+  burstRounds: {x: 3, y: 4}
+  burstPause: {x: 0.8, y: 1.2}
+  retreatHealthFraction: 0.25
+  pursuitRadius: 30
+  firearm: {fileID: 11400000, guid: b2b1d85fd448dfb46925d1211b0b6af7, type: 2}
+  ammo: {fileID: 11400000, guid: cd6507968b0cd554a8d0486783568ad1, type: 2}
+  headArmor: {fileID: 11400000, guid: 8dcb413d64b70a247895b738172fece9, type: 2}
+  bodyArmor: {fileID: 11400000, guid: 5f5cfe46c1836604e9023cf1bfab2038, type: 2}
+  waypointWait: 0.8
+  coverSearchRadius: 12
+  reloadCoverTimeout: 1.5
+  pathRetryInterval: 0.4
+  stuckTimeout: 2

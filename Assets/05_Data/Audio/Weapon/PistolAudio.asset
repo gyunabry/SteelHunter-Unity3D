@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9086b6b1038ca134380d6552b3d91711, type: 3}
+  m_Name: PistolAudio
+  m_EditorClassIdentifier: Assembly-CSharp::WeaponAudioProfile
+  fire: {fileID: 11400000, guid: 5a1b636f781b57a4f8e6a1a835d20d1c, type: 2}
+  reloadStart: {fileID: 11400000, guid: 7ea126834e1f60d408d12908fc8e216a, type: 2}
+  reloadComplete: {fileID: 11400000, guid: 19bcf65d78d122d4f9aad97927b7056f, type: 2}

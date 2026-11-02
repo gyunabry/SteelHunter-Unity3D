@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 652ca376255f9db4ba7d59044220ead0, type: 3}
+  m_Name: S_Normal
+  m_EditorClassIdentifier: Assembly-CSharp::AmmoData
+  id: item_ammo_s_normal
+  displayName: "S-\uC77C\uBC18 \uD0C4\uC57D"
+  kind: 1
+  icon: {fileID: 21300000, guid: 725dda4afd78cb349bdffaad3ac82a1b, type: 3}
+  description: "녹슨 탄약보다 위력이 높은 S 규격의 일반 탄약."
+  maxStack: 999
+  unitWeight: 0.1
+  sellPrice: 2
+  buyPrice: 4
+  canSell: 1
+  caliber: {fileID: 11400000, guid: 576d3b2b7dda7e34796bf2808649b7e1, type: 2}
+  damageCoefficient: 1.1
+  armorPenetrationLevel: 0

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2ed0c015710cfc4d9c9ee651bed8ce3, type: 3}
+  m_Name: Tactical_Backpack
+  m_EditorClassIdentifier: Assembly-CSharp::BackpackData
+  id: item_backpack_tactical
+  displayName: "\uB300\uD615 \uC804\uC220 \uBC30\uB0AD"
+  kind: 4
+  icon: {fileID: 21300000, guid: 1dc787957fa22da4698449c95bb1cd94, type: 3}
+  description: "\uCD5C\uC18C\uD55C\uC758 \uC218\uB0A9 \uACF5\uAC04\uC744 \uC81C\uACF5\uD558\uB294
+    \uAC00\uBCBC\uC6B4 \uBC30\uB0AD\n"
+  maxStack: 1
+  unitWeight: 3
+  sellPrice: 850
+  buyPrice: 1700
+  canSell: 1
+  addedSlotCount: 15
+  addedWeightCapacity: 25

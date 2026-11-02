@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cab1cd5fef4d0464ba585f9cabbcb60b, type: 3}
+  m_Name: AttackMuzzle
+  m_EditorClassIdentifier: Assembly-CSharp::GunAttachmentData
+  id: item_attachment_attackmuzzle
+  displayName: "\uACF5\uACA9\uD615 \uCD1D\uAD6C"
+  kind: 2
+  icon: {fileID: 1098697088, guid: 2625612370885f04f8bd343b7124bd9c, type: 3}
+  description: 
+  maxStack: 1
+  unitWeight: 0.5
+  sellPrice: 300
+  buyPrice: 600
+  canSell: 1
+  slot: 1
+  modifiers:
+  - stat: 0
+    addValue: 0
+    percentValue: 0.15
+  - stat: 11
+    addValue: 0
+    percentValue: -0.1

@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bf66602d0e0b72409ac2ec1ff0d31ff, type: 3}
+  m_Name: GLOCK17
+  m_EditorClassIdentifier: Assembly-CSharp::FirearmData
+  id: weapon_pistol_01
+  displayName: Glock17
+  kind: 0
+  icon: {fileID: 21300000, guid: 9cb798aff352ca649bd4216e24589e38, type: 3}
+  description: 
+  maxStack: 999
+  unitWeight: 1.5
+  sellPrice: 50
+  buyPrice: 100
+  canSell: 1
+  audioProfile: {fileID: 11400000, guid: 6b0df3ae46af9a048a2b51c8782d0bd2, type: 2}
+  weaponType: 1
+  visualPrefab: {fileID: 248587783397527921, guid: 9aa99e32c2bfa574d8922f30a6890753, type: 3}
+  caliber: {fileID: 11400000, guid: 576d3b2b7dda7e34796bf2808649b7e1, type: 2}
+  damage: 12
+  fireRate: 5
+  magazineSize: 12
+  reloadDuration: 1.5
+  projectileSpeed: 35
+  range: 70
+  criticalDamageMultiplier: 1.5
+  soundRange: 30
+  aimTime: 0.3
+  moveSpeedCoefficient: 1
+  aimMoveCoefficient: 0.6
+  hipFireSpread: 5
+  aimSpread: 1
+  allowedAttachmentSlots: 5

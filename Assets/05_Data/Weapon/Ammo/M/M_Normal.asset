@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 652ca376255f9db4ba7d59044220ead0, type: 3}
+  m_Name: M_Normal
+  m_EditorClassIdentifier: Assembly-CSharp::AmmoData
+  id: item_ammo_m_normal
+  displayName: "M-\uC77C\uBC18 \uD0C4\uC57D"
+  kind: 1
+  icon: {fileID: 21300000, guid: de2c9f26d9da71c408d57d9ee4660932, type: 3}
+  description: "\uB179\uC2A8 \uD0C4\uC57D\uBCF4\uB2E4 \uC704\uB825\uC774 \uB192\uC740
+    M \uADDC\uACA9\uC758 \uC77C\uBC18 \uD0C4\uC57D."
+  maxStack: 999
+  unitWeight: 0.1
+  sellPrice: 2
+  buyPrice: 6
+  canSell: 1
+  caliber: {fileID: 11400000, guid: db0c1fdb382e9b04490ed61dad02fa19, type: 2}
+  damageCoefficient: 1.1
+  armorPenetrationLevel: 1

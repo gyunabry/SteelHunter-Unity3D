@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fe5552cb3ed5284984fd182d5ffd9e8, type: 3}
+  m_Name: LightInfantry
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyCharacterData
+  detectionRange: 22
+  loseRange: 28
+  fieldOfView: 110
+  confirmationTime: 0.35
+  perceptionInterval: 0.15
+  soundOcclusionFactor: 0.5
+  investigationDuration: 5
+  sightMemoryDuration: 6
+  searchDuration: 5
+  pursuitLimit: 12
+  thinkInterval: 0.2
+  reactionDelay: {x: 0.25, y: 0.6}
+  preferredMinRange: 8
+  preferredMaxRange: 16
+  rangeHysteresis: 1.5
+  aimTolerance: 5
+  burstRounds: {x: 2, y: 4}
+  burstPause: {x: 0.5, y: 1}
+  retreatHealthFraction: 0.35
+  pursuitRadius: 30
+  firearm: {fileID: 11400000, guid: 3326d6532a7c07d4c9d6531e143cb599, type: 2}
+  ammo: {fileID: 11400000, guid: 6d20d18f2aa038646b735f1f4873d3a6, type: 2}
+  headArmor: {fileID: 0}
+  bodyArmor: {fileID: 11400000, guid: 5a173b1cfff36a54d8c8cdfd15974cfa, type: 2}
+  waypointWait: 1
+  coverSearchRadius: 10
+  reloadCoverTimeout: 2
+  pathRetryInterval: 0.5
+  stuckTimeout: 2
