@@ -12,7 +12,6 @@ public class InteractionPromptView : MonoBehaviour
     {
         if (worldCamera == null)
         {
-            Debug.LogWarning("Camera가 없습니다.");
             SetVisible(false);
             return;
         }

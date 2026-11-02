@@ -3,7 +3,7 @@ using UnityEngine;
 [RequireComponent(typeof(EnemyCharacterBrain))]
 public sealed class EnemyCharacterDebugView : MonoBehaviour
 {
-    [SerializeField] private bool showOverlay = true;
+    [SerializeField] private bool showOverlay = false;
 
     [Header("Perception Gizmos")]
     [SerializeField] private bool showPerceptionGizmos = true;

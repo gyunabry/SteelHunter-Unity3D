@@ -160,7 +160,9 @@ public class InventoryPresenter : MonoBehaviour
             !interactor.IsInRange(currentLoot)) return;
 
         if (!currentLoot.TryTransferTo(index, inventory))
+#if UNITY_EDITOR || DEVELOPMENT_BUILD
             Debug.Log("아이템을 가져오지 못했습니다.", this);
+#endif
         RefreshOpenView();
     }
 
@@ -168,14 +170,18 @@ public class InventoryPresenter : MonoBehaviour
     {
         if (!CanOpen || !isOpen || !showingStash || currentStash == null) return;
         if (!currentStash.TryDeposit(binding, index, out string message))
+#if UNITY_EDITOR || DEVELOPMENT_BUILD
             Debug.Log(message, this);
+#endif
     }
 
     private void HandleWithdrawRequested(int index)
     {
         if (!CanOpen || !isOpen || !showingStash || currentStash == null) return;
         if (!currentStash.TryWithdraw(binding, index, out string message))
+#if UNITY_EDITOR || DEVELOPMENT_BUILD
             Debug.Log(message, this);
+#endif
     }
 
     private void HandleInventoryEquipRequested(int index)
@@ -185,7 +191,9 @@ public class InventoryPresenter : MonoBehaviour
         ItemStack item = inventory.GetItem(index);
         if (item == null || !(item.Data is EquipmentData)) return;
         if (!equipment.TryEquip(index))
+#if UNITY_EDITOR || DEVELOPMENT_BUILD
             Debug.Log("장비 종류와 가방 용량을 확인하세요.", this);
+#endif
     }
 
     private void HandleEquipRequested(int index, ItemStack stack, EquipmentSlot slot)
@@ -194,7 +202,9 @@ public class InventoryPresenter : MonoBehaviour
             index < 0 || index >= inventory.SlotCount ||
             !ReferenceEquals(inventory.GetItem(index), stack)) return;
         if (!equipment.TryEquip(index, slot))
+#if UNITY_EDITOR || DEVELOPMENT_BUILD
             Debug.Log("해당 장비 칸에 장착할 수 없습니다.", this);
+#endif
     }
 
     private void HandleWeaponSelectRequested(EquipmentSlot slot)
@@ -207,7 +217,9 @@ public class InventoryPresenter : MonoBehaviour
     {
         if (!CanOpen || !isOpen || equipment == null) return;
         if (!equipment.TryUnequip(slot))
+#if UNITY_EDITOR || DEVELOPMENT_BUILD
             Debug.Log("장비를 해제할 공간 또는 허용 무게가 부족합니다.", this);
+#endif
     }
 
     private void RefreshOpenView()

@@ -41,7 +41,6 @@ public sealed class InventoryHudVisibility : MonoBehaviour
             element.tween?.Kill();
             element.tween = null;
 
-            // Capture once per open/close cycle, including interrupted transitions.
             if (open && !element.inputCaptured && element.canvasGroup != null)
             {
                 element.interactable = element.canvasGroup.interactable;
@@ -100,8 +99,6 @@ public sealed class InventoryHudVisibility : MonoBehaviour
         float bottom = parent.InverseTransformPoint(corners[0]).y;
         float top = float.NegativeInfinity;
 
-        // HUD roots stretch over the full canvas. Measure their visual children,
-        // rather than moving a full-screen root by an arbitrary fixed distance.
         foreach (Graphic graphic in root.GetComponentsInChildren<Graphic>(true))
         {
             graphic.rectTransform.GetWorldCorners(corners);

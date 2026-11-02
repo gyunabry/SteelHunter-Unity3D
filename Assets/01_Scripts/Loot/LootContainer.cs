@@ -31,7 +31,6 @@ public class LootContainer : MonoBehaviour, IInteractable
 
         if (initialLootTable == null)
         {
-            Debug.LogError($"{name} : 초기 루트 테이블이 없습니다.", this);
             return;
         }
 
@@ -71,22 +70,6 @@ public class LootContainer : MonoBehaviour, IInteractable
         return true;
     }
 
-    [ContextMenu("디버깅용 내용물 출력")]
-    private void PrintContents()
-    {
-        if (!IsInitialized)
-        {
-            Debug.Log("아직 초기화되지 않은 상자입니다.");
-            return;
-        }
-
-        Debug.Log($"{containerName} : {items.Count}개");
-        
-        foreach (ItemStack stack in items)
-        {
-            Debug.Log($"{stack.Data.DisplayName} x{stack.Quantity}");
-        }
-    }
 
     public bool CanInteract()
     {
@@ -99,7 +82,5 @@ public class LootContainer : MonoBehaviour, IInteractable
         {
             return;
         }
-
-        Debug.Log("상호작용!");
     }
 }

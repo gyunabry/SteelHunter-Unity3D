@@ -52,8 +52,7 @@ public class InventoryItemDrag : MonoBehaviour,
         ClearDrag();
         eventData.eligibleForClick = false;
 
-        GameObject iconObject = new GameObject(
-            "Dragging Icon", typeof(RectTransform), typeof(Image));
+        GameObject iconObject = new GameObject("Dragging Icon", typeof(RectTransform), typeof(Image));
         iconObject.transform.SetParent(canvas.transform, false);
         iconObject.transform.SetAsLastSibling();
 
